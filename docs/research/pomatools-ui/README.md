@@ -22,6 +22,7 @@
 - [data-loading.md](data-loading.md): JSONロード、キャッシュ、検索、Adapter層の設計案。
 - [component-structure.md](component-structure.md): PoMa Gym Damage Calculator v3向けComponent構成案。
 - [future-implementation-notes.md](future-implementation-notes.md): 移植・改善・保守性向上の提案。
+- [damage-roll-engine.md](damage-roll-engine.md): PoMaTools完全互換ダメージロール、丸め順、ブレイク/テラスタル/EXロールの調査メモ。
 - [open-questions.md](open-questions.md): 追加検証が必要な事項。
 
 ## 結論
