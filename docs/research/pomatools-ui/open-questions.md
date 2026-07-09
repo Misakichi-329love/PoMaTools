@@ -27,3 +27,10 @@
 - 過去の `ng-pomatools.web.app` のアセットやソースマップが残っているか確認する。
 - GitHub Pagesの別organization/repositoryに実アプリ成果物が存在するか確認する。
 - PoMaTools作者またはコミュニティが公開しているデータ更新手順を探す。
+
+## ダメージロール完全互換で追加検証が必要な事項
+
+- 現行 `https://pomatools.github.io/#/pairs/28701/102400` のbundleまたは通信JSONを保存し、`damageRoll` が `rawDamage` 経由ではなく `attack` / `battlePower` / `defense` / `finalMultiplier` から直接計算されるか確認する。
+- `Math.fround` が適用される正確な位置と、11ロール目だけ直接 `Math.floor` されるという先行解析の配列インデックスを確認する。
+- ブレイク、テラスタル、EXロールが `battlePower`、ステータス、防御側補正、`finalMultiplier`、表示専用のどこに注入されるかを確認する。
+- `ge` と `pe` の重複・集約・floor順が、最新版PoMaTools bundleでも先行解析通りか確認する。
